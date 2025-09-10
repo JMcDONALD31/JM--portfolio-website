@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      color: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #cbd5e1;
+    }
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .buttons a {
+      text-decoration: none;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+    .buttons a:hover {
+      background: #818cf8;
+      transform: translateY(-3px);
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello, I'm [Your Name]</h1>
+    <p>Welcome to my portfolio — I'm a [Your Role: e.g. Web Developer, Designer, Software Engineer] passionate about building modern, creative, and user-friendly digital experiences.</p>
+    
+    <div class="buttons">
+      <a href="#projects">View My Work</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+    
+    <footer>
+      © <span id="year"></span> [Your Name]. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
